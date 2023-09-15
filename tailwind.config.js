@@ -11,6 +11,9 @@ module.exports = {
         "black-100": "#100d25",
         "black-200": "#090325",
         "white-100": "#f3f3f3",
+        "pink-100" : "#B8094B",
+        "blue-100" : "#005AE2",
+        "green-100" : "#006E00"
       },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",
