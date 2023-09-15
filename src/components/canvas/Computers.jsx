@@ -18,7 +18,7 @@ const Computers = () => {
         penumbra={1}
         intensity={1}
         castShadow
-        shadows-mapSize={1024}
+        // shadows-mapSize={1024}
       />
       <primitive 
         object={computer.scene} 
@@ -51,4 +51,4 @@ const ComputersCanvas = () => {
   )
 }
 
-export default Computers
+export default ComputersCanvas
