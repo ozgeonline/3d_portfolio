@@ -1,10 +1,19 @@
 import {
+  gpt,
+  three,
+  firebase,
+  npm,
+  sass,
+  bootstrap,
+  code,
+  eng,
+  edu,
   mobile,
-  backend,
+  frontend,
   creator,
   web,
   javascript,
-  typescript,
+  // typescript,
   html,
   css,
   reactjs,
@@ -14,13 +23,7 @@ import {
   mongodb,
   git,
   figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
+  // docker,
   tripguide,
   threejs,
 } from "../assets";
@@ -46,17 +49,18 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Responsive & Modern Design",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
-    icon: backend,
+    title: "Frontend Developer",
+    icon: frontend,
   },
   {
     title: "Content Creator",
     icon: creator,
   },
+  
 ];
 
 const technologies = [
@@ -73,20 +77,28 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
     name: "React JS",
     icon: reactjs,
   },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
+  // {
+  //   name: "Redux Toolkit",
+  //   icon: redux,
+  // },
   {
     name: "Tailwind CSS",
     icon: tailwind,
+  },
+  {
+    name: "Bootstrap CSS",
+    icon: bootstrap,
+  },
+  {
+    name: "Sass CSS",
+    icon: sass,
+  },
+  {
+    name: "NPM",
+    icon: npm,
   },
   {
     name: "Node JS",
@@ -96,6 +108,10 @@ const technologies = [
     name: "MongoDB",
     icon: mongodb,
   },
+  // {
+  //   name: "Firebase",
+  //   icon: firebase,
+  // },
   {
     name: "Three JS",
     icon: threejs,
@@ -108,65 +124,72 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
+  // {
+  //   name: "docker",
+  //   icon: docker,
+  // },
+  // {
+  //   name: "TypeScript",
+  //   icon: typescript,
+  // }
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "High School",
+    company_name: "Menteşe Anadolu Lisesi",
+    icon: edu,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "2006 - 2010",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Science"
+  
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "University",
+    company_name: "Süleyman Demirel University",
+    icon: edu,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Sep 2011 - Feb 2017",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Environmental Engineering"
     ],
   },
+  {
+    title: "Environmental Engineer",
+    company_name: "Aytuğ Geri Dönüşüm",
+    icon: eng,
+    iconBg: "#E6DEDD",
+    date: "Sep 2017 - Feb 2020",
+    points: [
+      "Operating a recycling facility in accordance with the standards of the Ministry of Environment",
+      "Raw material research and product sales",
+      "Preliminary Accounting"
+    ],
+  },
+  {
+    title: "Environmental Engineer",
+    company_name: "Bodrum Water Purification",
+    icon: eng,
+    iconBg: "#E6DEDD",
+    date: "May 2020 - Aug 2022",
+    points: [
+      "Quality and control of companies' water treatment systems",
+      "Marketing and Sales"
+    ],
+  },
+  {
+    title: "Software Learning Process",
+    company_name: "the Magical World of the Internet 🌎",
+    icon: code,
+    iconBg: "#E6DEDD",
+    date: "",
+    points: [
+      "",
+      ""
+    ],
+  }
 ];
 
 const testimonials = [
@@ -198,46 +221,48 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "3D Visuals",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "It is built with ThreeJS, a powerful 3D graphics library used to create and animate the 3D model. Remarkable visuals were created by creating animations with React Three Fiber and Framer Motion libraries.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "three.js",
         color: "green-text-gradient",
       },
       {
         name: "tailwind",
         color: "pink-text-gradient",
-      },
+      }
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: three,
+    source_code_link: "https://github.com/ozgeonline/3d_portfolio",
+    live_demo_link: "https://master--gregarious-licorice-8ffa73.netlify.app/"
   },
   {
-    name: "Job IT",
+    name: "Modern UI & UX Design",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Practice writing clean code with React functional components and their reusability was practiced. Made responsive to all devices with flex and grid structure",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "flex & grid",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "components",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: gpt,
+    source_code_link: "https://github.com/ozgeonline/gpt3",
+    live_demo_link:"https://astonishing-bunny-9f3d86.netlify.app/"
   },
   {
     name: "Trip Guide",
