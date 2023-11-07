@@ -76,6 +76,8 @@ export const slideIn = (direction, type, delay, duration) => {
 };
 
 export const staggerContainer = (staggerChildren, delayChildren) => {
+  //staggerChildren:her bir alt öğenin animasyonu arasındaki gecikmeyi belirten bir sayıdır
+  //delayChildren, tüm alt öğelerin animasyonları için başlangıç ​​gecikmesini belirtir
   return {
     hidden: {},
     show: {

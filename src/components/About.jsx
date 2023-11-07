@@ -37,7 +37,7 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
-      <motion.p variants={fadeIn("", "" , 0.1, 1)}
+      <motion.p variants={fadeIn("", "" , 0.1, 1)} //yön,hız,süre,gecikme
         className='mt-4 text-secondary text-[17px] max-w-4xl leading-[30px]'
       >
         My goal is to become a full stack developer.

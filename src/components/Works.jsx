@@ -29,22 +29,22 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link, l
               className="black-violet-gradient opacity-90 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
               title="Source Code"
             >
-            <img
-              src={github}
-              alt="github"
-              className="w-1/2 h-1/2 object-contain"
-            />              
+              <img
+                src={github}
+                alt="github"
+                className="w-1/2 h-1/2 object-contain"
+              />              
             </div>
             <div
               onClick={() => window.open (live_demo_link, "_blank")}
               className="black-violet-rev-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer ml-1"
               title="Live Demo"
             >
-            <img
-              src={eye}
-              alt="live"
-              className="w-1/2 h-1/2 object-contain"
-            />              
+              <img
+                src={eye}
+                alt="live"
+                className="w-1/2 h-1/2 object-contain"
+              />              
             </div>
           </div>
         </div>

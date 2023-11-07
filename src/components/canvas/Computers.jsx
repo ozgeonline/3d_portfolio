@@ -17,9 +17,9 @@ const Computers = ( {isMobile} ) => {
       <pointLight intensity={13} />
       <spotLight
         position={[-20, 50, 10]}
-        angle={0.15} /* açı */
-        penumbra={1} /*koni gölgesi*/
-        intensity={1} /*ışık yoğunluğu*/
+        angle={0.15}
+        penumbra={1}
+        intensity={1}
         castShadow
         shadow-mapSize={1024}
       />
@@ -39,11 +39,10 @@ const ComputersCanvas = () => {
   useEffect(() => {
     // Add a listener for changes to the screen size
     const mediaQuery = window.matchMedia("(max-width: 500px)");
-
     // Set the initial value of the `isMobile` state variable
     setIsMobile(mediaQuery.matches);
 
-    // Define a callback function to handle changes to the media query
+    // Medya sorgusunda yapılan değişiklikleri işlemek için bir callback func tanımlama
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
     };
@@ -66,8 +65,8 @@ const ComputersCanvas = () => {
       camera={{position: [20, 3, 5], fov: 25}}
       gl={{preserveDrawingBuffer: true}}
     >
-       <Suspense fallback={<CanvasLoader />}> {/*Suspense askıya alır */}
-         <OrbitControls  /* yörüngede dönme */
+       <Suspense fallback={<CanvasLoader />}>
+         <OrbitControls
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}

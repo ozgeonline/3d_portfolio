@@ -21,8 +21,8 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt='logo' className='w-16 h-20 object-contain'/>
-          <p className='blue-text-gradient font-bold text-[16px]  cursor-pointer flex'
-          > JS &nbsp;
+          <p className='blue-text-gradient font-bold text-[16px]  cursor-pointer flex'> 
+            JS &nbsp;
             <span className='sm:block hidden' >| ozgeonline</span>
           </p>
         </Link>
