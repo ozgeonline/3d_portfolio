@@ -1,4 +1,5 @@
 import {
+  iphone,
   gpt,
   three,
   firebase,
@@ -223,7 +224,7 @@ const projects = [
   {
     name: "3D Visuals",
     description:
-      "It is built with ThreeJS, a powerful 3D graphics library used to create and animate the 3D model. Remarkable visuals were created by creating animations with React Three Fiber and Framer Motion libraries.",
+      "It is built with ThreeJS, a powerful 3D graphics library used to create and animate the 3D model. React Three Fiber and Framer Motion libraries were used.",
     tags: [
       {
         name: "react",
@@ -240,7 +241,7 @@ const projects = [
     ],
     image: three,
     source_code_link: "https://github.com/ozgeonline/3d_portfolio",
-    live_demo_link: "https://master--gregarious-licorice-8ffa73.netlify.app/"
+    live_demo_link: "https://portfolio-react-three.netlify.app/"
   },
   {
     name: "Modern UI & UX Design",
@@ -248,7 +249,7 @@ const projects = [
       "Practice writing clean code with React functional components and their reusability was practiced. Made responsive to all devices with flex and grid structure",
     tags: [
       {
-        name: "react",
+        name: "react.js",
         color: "blue-text-gradient",
       },
       {
@@ -262,28 +263,33 @@ const projects = [
     ],
     image: gpt,
     source_code_link: "https://github.com/ozgeonline/gpt3",
-    live_demo_link:"https://astonishing-bunny-9f3d86.netlify.app/"
+    live_demo_link:"https://gpt-4-react-project.netlify.app/"
   },
   {
-    name: "Trip Guide",
+    name: "3D iPhone",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Created 3D animation in React using technologies such as WebGi (supported by Three.js) and GSAP. Optimized for mobile devices.",
     tags: [
       {
-        name: "nextjs",
+        name: "react.js",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "gsap",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "webgi",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "three.js",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: iphone,
+    source_code_link: "https://github.com/ozgeonline/3d-website/tree/main",
+    live_demo_link:"https://3d-iphone14.netlify.app/"
   },
 ];
 

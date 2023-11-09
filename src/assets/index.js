@@ -28,15 +28,17 @@ import npm from './tech/npm.svg'
 import firebase from './tech/firebase.svg'
 import three from './tech/three.png'
 import gpt from './tech/gpt.png'
-
+import iphone from './tech/iphone.png'
 import edu from './company/edu.png'
 import eng from './company/eng.png'
 import code from './company/code.png'
 
 
+
 import tripguide from "./tripguide.png";
 
 export {
+  iphone,
   gpt,
   eye,
   live,
