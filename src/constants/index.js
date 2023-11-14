@@ -27,6 +27,7 @@ import {
   // docker,
   tripguide,
   threejs,
+  dash,
 } from "../assets";
 
 export const navLinks = [
@@ -290,6 +291,32 @@ const projects = [
     image: iphone,
     source_code_link: "https://github.com/ozgeonline/3d-website/tree/main",
     live_demo_link:"https://3d-iphone14.netlify.app/"
+  },
+  {
+    name: "Admin DashBoard",
+    description:
+      "Material UI, Nivo Charts, Formik, Yup, FullCalendar and Data Grid were used in React application.The application consists of 10 pages",
+    tags: [
+      {
+        name: "react.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mui",
+        color: "green-text-gradient",
+      },
+      {
+        name: "nivo",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "charts",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: dash,
+    source_code_link: "https://github.com/ozgeonline/admin-dashboard",
+    live_demo_link:"https://admin-dashboard-react-mui-chart.netlify.app/"
   },
 ];
 

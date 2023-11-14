@@ -29,6 +29,7 @@ import firebase from './tech/firebase.svg'
 import three from './tech/three.png'
 import gpt from './tech/gpt.png'
 import iphone from './tech/iphone.png'
+import dash from './tech/dash.png'
 import edu from './company/edu.png'
 import eng from './company/eng.png'
 import code from './company/code.png'
@@ -38,6 +39,7 @@ import code from './company/code.png'
 import tripguide from "./tripguide.png";
 
 export {
+  dash,
   iphone,
   gpt,
   eye,
